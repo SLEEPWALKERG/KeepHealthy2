@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.keephealthy.MainActivity" >
+    
+    <ImageButton
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/searchcContent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:background="#ffffffff"
+        android:src="@android:drawable/ic_menu_search" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btnExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/exercise"
+            android:text="本周运动"
+            android:textColor="#696969"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btnCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/calander"
+            android:text="健康日历"
+            android:textColor="#696969"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/btnChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="健康曲线"
+            android:textSize="10sp"
+            android:textColor="#696969"
+            android:drawableTop="@drawable/zhexian" />
+
+        <TextView
+            android:id="@+id/btnHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/hospital"
+            android:text="附近医院"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/searchContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:layout_toLeftOf="@+id/btnSearch"
+        android:ems="10"
+        android:hint="有什么健康问题呢？"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

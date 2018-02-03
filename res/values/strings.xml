@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KeepHealthy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="white">#ffffff</color>
+
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="title_activity_chart">ChartActivity</string>
+    <string name="title_activity_exercise">ExerciseActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+</resources>
